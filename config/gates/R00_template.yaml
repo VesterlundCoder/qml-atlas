@@ -1,0 +1,49 @@
+# Gate Config Template for R__ — [Project Name]
+# Copy this file to R__.yaml and fill in the details.
+
+project: "R__"
+name: "[Project Name]"
+track: "[infrastructure|quantum_learning|quantum_sampling|quantum_optimization|quantum_reservoir]"
+wave: [1|2|3|4]
+
+# Primary question
+question: "[The specific question this project answers]"
+
+# Primary metric
+primary_metric: "[metric name]"
+primary_metric_definition: "[how it is computed]"
+
+# QA level target
+qa_target: [0|1|2|3|4]
+
+# Gates
+gates:
+  - id: "R__-G1"
+    name: "[Gate name]"
+    criterion: "[Pass criterion]"
+    fail_criterion: "[Fail criterion]"
+    status: "pending"  # pending | pass | fail
+
+  - id: "R__-G2"
+    name: "[Gate name]"
+    criterion: "[Pass criterion]"
+    fail_criterion: "[Fail criterion]"
+    status: "pending"
+
+# Kill criteria (early termination)
+kill_criteria:
+  - "[e.g., If A < -0.05 at both n=16 and n=20, kill the track]"
+
+# Compute budget
+compute:
+  cpu_core_hours: [number]
+  gpu_hours: [number]
+  qpu_hours: [number]
+
+# Reuse (existing code)
+reuse:
+  - "[path to existing code/module]"
+
+# Dependencies (other projects that must complete first)
+dependencies:
+  - "[e.g., R01 — Atlas must be built first]"

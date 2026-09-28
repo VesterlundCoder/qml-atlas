@@ -1,0 +1,34 @@
+{
+  "name": "WestQuant Quantum Advantage Boundary Atlas",
+  "version": "0.1.0",
+  "date": "2026-09-28",
+  "description": "First frozen release of the QAB Atlas. Contains seed records from GQO+QSS, QMT, and R01-R10 second wave.",
+  "schema_version": "0.1",
+  "records": 823,
+  "sources": [
+    "gqo_qss_final_experiment",
+    "gqo_basin_statistics",
+    "gqo_ground_truth_certificates",
+    "qmt_reservoir_computing",
+    "r01_r10_second_wave"
+  ],
+  "tracks": {
+    "infrastructure": 732,
+    "quantum_sampling": 60,
+    "quantum_reservoir": 27,
+    "quantum_learning": 22
+  },
+  "status_breakdown": {
+    "not_assessed": 734,
+    "classical_advantage": 64,
+    "unresolved": 35,
+    "quantum_candidate": 8
+  },
+  "gate_status": {"R01-G1": "PASS"},
+  "next_steps": [
+    "R02: Classical frontier",
+    "R03: Exact landscape atlas",
+    "R04: Resource accounting standard",
+    "R05: Problem-difficulty generator"
+  ]
+}

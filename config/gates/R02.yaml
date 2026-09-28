@@ -1,0 +1,21 @@
+project: "R02"
+name: "[See MASTER_RESEARCH_PLAN.md]"
+track: "[See plan]"
+wave: 1
+question: "[See MASTER_RESEARCH_PLAN.md]"
+primary_metric: "[See plan]"
+qa_target: 1
+gates:
+  - id: "R02-G1"
+    name: "Primary gate"
+    criterion: "[See MASTER_RESEARCH_PLAN.md]"
+    fail_criterion: "[See plan]"
+    status: "pending"
+kill_criteria:
+  - "[See MASTER_RESEARCH_PLAN.md]"
+compute:
+  cpu_core_hours: 0
+  gpu_hours: 0
+  qpu_hours: 0
+reuse: []
+dependencies: []
